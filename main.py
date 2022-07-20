@@ -1,7 +1,3 @@
-'''Практическое задание итоговой аттестации'''
-'''Создание программы на Python, выполняющей сортировку методом пузырька'''
-#!usr/bin/env/python3
-# -*- coding: utf-8 -*-
 from random import randint
 import time
 
@@ -33,7 +29,7 @@ def nask(amin=20, amax=1000):
 l1 = []
 for i in range(nask()):
     l1.append(randint(10000, 99999))
-# print(f'Сгенирированный список: {l1}')
+print(f'Сгенирированный список: {l1}')
 
 # Cортировка
 time_start = time.perf_counter()
@@ -52,7 +48,7 @@ l1_sort = bub_sort(l1)
 # Вывод программы
 print(f'Количество чисел в списке: {len(l1_sort)}')
 
-print(f'Процессорное время, которое было затрачено на сортировку: {time_proc:.3f} сек') #round(time_proc, 3)
+print(f'Процессорное время, которое было затрачено на сортировку: {time_proc:.10f} сек') #round(time_proc, 3)
 
 print(f'Сумма 10 максимальных чисел отсортированного списка: {sum(l1_sort[len(l1_sort) - 10::])}')
 
